@@ -11,7 +11,7 @@ public class Student {
         Scanner student = new Scanner(System.in);
 
         System.out.println("Enter your name:");
-        name = student.nextLine();
+        name = student.nextLine(); 
 
         System.out.println("Enter USN:");
         usn = student.nextLine();
