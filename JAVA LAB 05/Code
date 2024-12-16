@@ -1,1 +1,36 @@
+/****** P1 ****/
 
+
+abstract class Animal {
+    abstract void eatAndSleep();
+}
+
+class Lion extends Animal {
+    void eatAndSleep() {
+        System.out.println("Lion: Eats meat, and sleeps in a den.");
+    }
+}
+
+class Deer extends Animal {
+    void eatAndSleep() {
+        System.out.println("Deer: Grazes on grass, and sleeps under trees.");
+    }
+}
+
+class Tiger extends Animal {
+    void eatAndSleep() {
+        System.out.println("Tiger: Eats meat, and rests in dense forests.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal lion = new Lion();
+        Animal deer = new Deer();
+        Animal tiger = new Tiger();
+        System.out.println("Animal Behaviors:");
+        lion.eatAndSleep();
+        deer.eatAndSleep();
+        tiger.eatAndSleep();
+    }
+}
